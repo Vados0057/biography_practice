@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Biography {
     public static void main(String[] args) {
 
@@ -32,6 +35,11 @@ public class Biography {
          */
 
         //YOUR CODE HERE
+
+        Author author = Author.newAuthor();
+        System.out.println(author);
+        System.out.println("Author's books are as listed below:");
+        author.books.forEach(System.out::println);
 
     }
 }
